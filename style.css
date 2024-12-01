@@ -1,3 +1,62 @@
 *, html {
     scroll-behavior: smooth;
 }
+
+/* Section Kotak */
+.kontak .header .title {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #151948;
+}
+
+.kontak .header .sub-title {
+    font-size: 18px;
+    line-height: 26px;
+    color: #5e629c;
+}
+
+.kontak .card input {
+    min-height: 42px;
+    padding: 0px 0 0 28px;
+    font-size: 16px;
+    color: #5e629c;
+}
+
+.kontak .card textarea {
+    padding: 15px 0 0 28px;    
+}
+
+.kontak .form .btn-common {
+    background-color: #0e5fb1;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
+    width: 160px;
+    height: 50px;
+    padding: 14px 15px;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.kontak .informasi .card {
+    padding: 38px;
+}
+
+.kontak .informasi .card .title {
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 33px;
+    color: #5e629c;   
+    font-family: 'Poppins', sans-serif; 
+}
+
+.kontak .informasi .card .title span {
+    font-weight: 400;
+}
+/* Section Kotak End */
