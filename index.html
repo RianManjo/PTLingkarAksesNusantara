@@ -91,9 +91,11 @@
     <div class="tentang">
         <div class="container">
             <div class="row">
-                <div class="col-md-6"></div>
+                <div class="col-md-6 text-center mt-5 mb-5">
+                    <img src="/assets/img/worldnet.svg" alt="...">
+                </div>
                 <div class="col-md-6 mt-5">
-                    <h3 class="title">Tentang Kami</h3>
+                    <h3 class="title mt-2">Tentang Kami</h3>
                     <h6 class="sub-title">Visi</h6>
                     <p class="desc">Menjadi perusahaan penyedia jasa internet terdepan di Indonesia untuk dapat berkontribusi bagi kemajuan nusa dan bangsa </p>
                     <br>
@@ -184,17 +186,19 @@
             <div class="row">
                 <div class="col-md-4 ">
                     <div class="form">
-                        <div class="ca">
-                            <input type="text" class="form-control mb-2" placeholder="Nama">
-                            <br>
-                            <input type="text" class="form-control mb-2" placeholder="Alamat">
-                            <br>
-                            <input type="Email"class="form-control mb-2"  placeholder="Email">
-                            <br>                                    
-                            <textarea name="text" id="" class="form-control mb-3" placeholder="Tulis Pesan"></textarea>
-                            <br>
-                        </div>                        
-                        <button class="btn-common">Kirim</button>                        
+                        <form id="emailForm">
+                            <div class="ca">
+                                <input type="text" name="name" class="form-control mb-2" placeholder="Nama">
+                                <br>
+                                <input type="text" name="address" class="form-control mb-2" placeholder="Alamat">
+                                <br>
+                                <input type="email" name="email" class="form-control mb-2" placeholder="Email">
+                                <br>
+                                <textarea name="message" class="form-control mb-3" placeholder="Tulis Pesan"></textarea>
+                                <br>
+                            </div>
+                            <button type="submit" class="btn-common">Kirim</button>
+                        </form>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -278,12 +282,19 @@
                 <br>
             </div>
         </div>
+        <div id="scrollToTop" class="scroll-to-top">
+            🔝
+        </div>
     </div>
     <!-- Section Footer Selesai -->
 
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
+    <script src="main.js"></script>
 </body>
 </html>
