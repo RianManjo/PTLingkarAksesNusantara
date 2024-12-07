@@ -7,178 +7,207 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css"/>    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- <title>Provider Internet</title>     -->
 </head>
 <body>
 
     <!-- Navigation Bar -->
-
+    <nav class="navbar fixed-top shadow container-fluid">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/img/Logo.svg" alt="">
+            </div>
+            <div class="navigasi">
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#layanan" class="nav-link">Layanan</a></li>
+                    <li><a href="#tentangKami" class="nav-link">Tentang Kami</a></li>
+                    <li><a href="#produk" class="nav-link">Produk</a></li>
+                </ul>
+            </div>
+            <div class="bar-1"></div>
+        </div>
+    </nav>
     <!-- Navigation Bar Selesai -->
     
-    <!-- Section Dashboard -->
-    <div class="dashboard">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 ">
-                    <p class="title">Inovasi Tanpa Batas dengan Solusi Terpadu</p>
-                    <p class="sub-title"> PT. Lingkar Akses Nusantara (LAN) berkomitmen menjadi penyedia layanan internet terpercaya untuk instansi pemerintah, perusahaan swasta, dan pengguna pribadi. <br>Dengan dukungan multi-backbone, tim profesional, teknologi terkini, dan inovasi berkelanjutan, kami siap menghadirkan akses internet terbaik di Indonesia.</p>
-                    <br>
-                    <button class="btn-common">HUBUNGI KAMI</button>
-                </div>
-                <div class="col-md-6">
-                    <img src="/assets/img/img-dashboard.svg" alt="...">
+    <!-- Section Dashboard  -->
+    <section id="home" class="section">
+        <div class="dashboard">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-right" data-aos-duration="900">
+                        <p class="title">Menyediakan Solusi Terpadu dengan Inovasi Tanpa Batas</p>
+                        <p class="sub-title"> PT. Lingkar Akses Nusantara (LAN) berkomitmen menjadi penyedia layanan internet terpercaya untuk instansi pemerintah, perusahaan swasta, dan pengguna pribadi. <br>Dengan dukungan multi-backbone, tim profesional, teknologi terkini, dan inovasi berkelanjutan, kami siap menghadirkan akses internet terbaik di Indonesia.</p>
+                        <br>
+                        <button class="btn-common">HUBUNGI KAMI</button>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+                        <img src="/assets/img/img-dashboard.svg" alt="...">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Section Dashboard Selesai -->
+    </section>
+    <!-- Section Dashboard Selesai -->    
 
     <!-- Section Layanan -->
-    <div class="layanan">
-        <div class="container">            
-            <div class="row">
-                <div class="col-12">
-                    <p class="title-header text-center">Manage Service</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card mt-2 mb-3" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="row">
-                            <div class="col text-center">
-                                <img src="/assets/img/img-bandwidth.svg" alt="...">
-                                <p class="title">Bandwidth on Demand</p>
-                                <p class="sub-title">Fleksibilitas untuk meng-uprade bandwidth anda. Kebutuhan bandwidth untuk jadwal pertemuan atau akses online pada waktu tertentu.</p>
-                            </div>                            
-                        </div>
+    <section id="layanan" class="section">
+        <div class="layanan">
+            <div class="container">                  
+                <div class="row">
+                    <div class="col-12">
+                        <p class="title-header text-center">Kelola Layanan</p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card mt-2 mb-3" data-aos="fade-up" data-aos-duration="1200">
-                        <div class="row">
-                            <div class="col text-center">
-                                <img src="/assets/img/img-24service.svg" alt="...">
-                                <p class="title">24/7 Support Assistance</p>
-                                <p class="sub-title">Customer service 24jam yang professional akan siap menerima setiap pertanyaan anda.</p>
-                            </div>                            
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card shadow mt-2 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <img src="/assets/img/img-bandwidth.svg" alt="...">
+                                    <p class="title">Bandwidth on Demand</p>
+                                    <p class="sub-title">Fleksibilitas untuk meng-uprade bandwidth anda. Kebutuhan bandwidth untuk jadwal pertemuan atau akses online pada waktu tertentu.</p>
+                                </div>                            
+                            </div>
                         </div>
                     </div>
+                    <div class="col-md-6">
+                        <div class="card shadow mt-2 mb-4" data-aos="fade-up" data-aos-duration="1200">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <img src="/assets/img/img-24service.svg" alt="...">
+                                    <p class="title">24/7 Support Assistance</p>
+                                    <p class="sub-title">Customer service kami siap melayani Anda 24 jam dengan profesionalisme tinggi, menjawab setiap pertanyaan, dan memastikan kepuasan Anda.</p>
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>                
                 </div>
-                <div class="col-md-6">
-                    <div class="card mt-2 mb-5" data-aos="fade-up" data-aos-duration="1400">
-                        <div class="row">
-                            <div class="col text-center">
-                                <img src="/assets/img/img-landingpage.svg" alt="...">
-                                <p class="title">Landing Page</p>
-                                <p class="sub-title">Kumpulan database dari jaringan internet kami saat client anda sign-in ke halaman Wi-Fi, dengan tujuan mendapatkan sejumlah pengguna yang relevan dengan layanan</p>
-                            </div>                            
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card shadow mt-2 mb-4 mb-0" data-aos="fade-up" data-aos-duration="1400">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <img src="/assets/img/img-landingpage.svg" alt="...">
+                                    <p class="title">Landing Page</p>
+                                    <p class="sub-title">Kumpulan database dari jaringan internet kami saat client anda sign-in ke halaman Wi-Fi, dengan tujuan mendapatkan sejumlah pengguna yang relevan dengan layanan</p>
+                                </div>                            
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card mt-2 mb-5" data-aos="fade-up" data-aos-duration="1600">
-                        <div class="row">
-                            <div class="col text-center">
-                                <img src="/assets/img/img-securitymanagement.svg" alt="...">
-                                <p class="title">Security Managed Service</p>
-                                <p class="sub-title">Kami merancang, memasang, memelihara dan meningkatkan Integrated Security Solution dengan layanan yang mendukung beragam macam bisnis.</p>
-                            </div>                            
+                    <div class="col-md-6">
+                        <div class="card shadow mt-2 mt-0 mb-5 mb-4" data-aos="fade-up" data-aos-duration="1600">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <img src="/assets/img/img-securitymanagement.svg" alt="...">
+                                    <p class="title">Security Managed Service</p>
+                                    <p class="sub-title">Kami merancang, memasang, memelihara dan meningkatkan Integrated Security Solution dengan layanan yang mendukung beragam macam bisnis.</p>
+                                </div>                            
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Section Manage Service Selesai -->
 
     <!-- Section Tentang Kami -->
-    <div class="tentang">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center mt-5 mb-5">
-                    <img src="/assets/img/worldnet.svg" alt="...">
-                </div>
-                <div class="col-md-6 mt-5">
-                    <h3 class="title mt-2">Tentang Kami</h3>
-                    <h6 class="sub-title">Visi</h6>
-                    <p class="desc">Menjadi perusahaan penyedia jasa internet terdepan di Indonesia untuk dapat berkontribusi bagi kemajuan nusa dan bangsa </p>
-                    <br>
-                    <h6 class="sub-title">Misi</h6>
-                    <div class="deskripsi">
-                        <div class="row">
-                            <div class="col-1"><li></li></div>
-                            <div class="col-11">
-                                <p class="isi">Memberikan solusi yang inovatif terhadap kebutuhan pelanggan</p>                                
-                            </div>
-                            <div class="col-1"><li></li></div>
-                            <div class="col-11">
-                                <p class="isi">Fokus pada pemberian service dan after sale yang baik demi kepuasan pelanggan</p>                                
-                            </div>
-                            <div class="col-1"><li></li></div>
-                            <div class="col-11 mb-5">
-                                <p class="isi">Berkomitmen untuk selalu memberikan inovasi yang berkelanjutan</p>                                
-                            </div>
-                        </div>                        
+    <section id="tentangKami" class="section">
+        <div class="tentang">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mt-5">
+                        <h3 class="title mt-2" data-aos="fade-right">Tentang Kami</h3>
+                        <h6 class="sub-title" data-aos="fade-right">Visi</h6>
+                        <p class="desc" data-aos="fade-right">Menjadi perusahaan penyedia jasa internet terdepan di Indonesia untuk dapat berkontribusi bagi kemajuan nusa dan bangsa </p>
+                        <br>
+                        <h6 class="sub-title" data-aos="fade-right">Misi</h6>
+                        <div class="deskripsi">
+                            <div class="row">
+                                <div class="col-1" data-aos="fade-right"><li><img src="assets/img/checklist.svg" alt=""></li></div>
+                                <div class="col-11" data-aos="fade-right">
+                                    <p class="isi">Memberikan solusi yang inovatif terhadap kebutuhan pelanggan</p>                                
+                                </div>
+                                <div class="col-1" data-aos="fade-right"><li><img src="assets/img/checklist.svg" alt=""></li></div>
+                                <div class="col-11" data-aos="fade-right">
+                                    <p class="isi">Fokus pada pemberian service dan after sale yang baik demi kepuasan pelanggan</p>                                
+                                </div>
+                                <div class="col-1" data-aos="fade-right"><li><img src="assets/img/checklist.svg" alt=""></li></div>
+                                <div class="col-11 mb-5" data-aos="fade-right">
+                                    <p class="isi">Berkomitmen untuk selalu memberikan inovasi yang berkelanjutan</p>                                
+                                </div>
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center mt-5 mb-5" data-aos="fade-left" data-aos-duration="1000">
+                        <!-- <img src="/assets/img/img-about.svg" alt="..."> -->
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Section Tentang Kami Selesai -->
 
     <!-- Section Produk -->
-    <div class="produk">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <p class="title text-center mt-5 mb-5">Beberapa Produk Unggulan Kami</p>                    
+    <section id="produk" class="section">
+        <div class="produk">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="title text-center mt-5 mb-5">Beberapa Produk Unggulan Kami</p>                    
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card text-center mb-5" data-aos="fade-up" data-aos-duration="1200">                                                    
-                        <div class="row">
-                            <div class="col text-center">                                
-                                <img src="/assets/img/internetkoneksi.svg" alt="...">                                
-                                <p class="title">Internet Connection</p>
-                                <p class="sub-title">Adalah Layanan yang menyediakan akses internet dengan beberapa pilihan kapasitas.</p>
-                                <button class="btn-common">PURCHASE</button>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card shadow text-center mb-5" data-aos="fade-up" data-aos-duration="1200">                                                    
+                            <div class="row">
+                                <div class="col text-center">                                
+                                    <img src="/assets/img/internetkoneksi.svg" alt="...">                                
+                                    <br>
+                                    <p class="title mt-3 mt-1">Internet Connection</p>
+                                    <p class="sub-title">Adalah Layanan yang menyediakan akses internet dengan beberapa pilihan kapasitas.</p>
+                                    <button class="btn-common">PURCHASE</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-center mb-5" data-aos="fade-up" data-aos-duration="1500">                                                    
-                        <div class="row">
-                            <div class="col text-center">                                
-                                <img src="/assets/img/manageservice.svg" alt="...">                                
-                                <p class="title">manage service</p>
-                                <p class="sub-title">Layanan jasa tambahan yang diberikan kepada pelanggan berupa manage perangkat, manage software dll.</p>
-                                <button class="btn-common">PURCHASE</button>
+                    <div class="col-md-4">
+                        <div class="card shadow text-center mb-5" data-aos="fade-up" data-aos-duration="1500">                                                    
+                            <div class="row">
+                                <div class="col text-center">                                
+                                    <img src="/assets/img/manageservice.svg" alt="...">                                
+                                    <br>
+                                    <p class="title mt-3 mt-1">manage service</p>
+                                    <p class="sub-title">Layanan jasa tambahan yang diberikan kepada pelanggan berupa manage perangkat, manage software dll.</p>
+                                    <button class="btn-common">PURCHASE</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-center mb-5" data-aos="fade-up" data-aos-duration="1800">                                                    
-                        <div class="row">
-                            <div class="col text-center">                                
-                                <img src="/assets/img/cloudservice.svg" alt="...">                                
-                                <p class="title">cloud solution</p>
-                                <p class="sub-title">Layanan cloud solution adalah layanan untuk penempatan berbagai macam resource pelanggan.</p>
-                                <button class="btn-common">PURCHASE</button>
+                    <div class="col-md-4">
+                        <div class="card shadow text-center mb-5" data-aos="fade-up" data-aos-duration="1800">                                                    
+                            <div class="row">
+                                <div class="col text-center">                                
+                                    <img src="/assets/img/cloudservice.svg" alt="...">                                
+                                    <br>
+                                    <p class="title mt-3 mt-1">cloud solution</p>
+                                    <p class="sub-title">Layanan cloud solution adalah layanan untuk penempatan berbagai macam resource pelanggan.</p>
+                                    <button class="btn-common">PURCHASE</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Section Produk Selesai -->
 
     <!-- Section Kontak -->
-    <div class="kontak mb-5">
+    <div class="kontak mb-5" id="kontak">
         <div class="container">
             <div class="row mt-5">
                 <div class="col-12">
@@ -189,8 +218,8 @@
                 </div>                
             </div>
             <div class="row">
-                <div class="col-md-4 ">
-                    <div class="form">
+                <div class="col-md-4">
+                    <div class="form mb-2 mb-5">
                         <form id="emailForm">
                             <div class="ca">
                                 <input type="text" name="name" class="form-control mb-2" placeholder="Nama">
@@ -199,7 +228,7 @@
                                 <br>
                                 <input type="email" name="email" class="form-control mb-2" placeholder="Email">
                                 <br>
-                                <textarea name="message" class="form-control mb-3" placeholder="Tulis Pesan"></textarea>
+                                <textarea name="message" class="form-control mb-3 lg" placeholder="Tulis Pesan"></textarea>
                                 <br>
                             </div>
                             <button type="submit" class="btn-common">Kirim</button>
@@ -207,30 +236,26 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="maps">
+                    <div class="maps mb-2 mb-5">
                         <div class="card">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3199.866451499482!2d119.47967365550176!3d-5.139224761182772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee334daba7981%3A0x2bc858bdbb27df3a!2sPerumahan%20Trika%20Mahkota%20Indah!5e0!3m2!1sid!2sid!4v1733021460327!5m2!1sid!2sid" width="auto" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 ">
-                    <div class="informasi">
+                <div class="col-md-4">
+                    <div class="informasi mb-2 mb-5">
                         <div class="card"> 
                             <div class="row">
-                                <div class="col-1"><li></li></div>
+                                <div class="col-1"><li> <img src="assets/img/map.svg" alt=""></li></div>
                                 <div class="title col-11">Alamat <span>: PERUM TRIKA MAHKOTA INDAH, Jl. Perintis Kemerdekaan VII, Kec. Tamalanrea, Kota Makassar, Sulawesi Selatan 9024</span></div>
                             </div>                                                                               
                             <div class="row">
-                                <div class="col-1"><li></li></div>
+                                <div class="col-1"><li><img src="assets/img/telepone.svg" alt=""></li></div>
                                 <div class="title col-11">No Telp <span>: +62 815-2334-461</span></div>
-                            </div>                                                                               
+                            </div>                                                                                                                    
                             <div class="row">
-                                <div class="col-1"><li></li></div>
-                                <div class="title col-11">Instagram <span>: </span></div>
-                            </div>            
-                            <div class="row">
-                                <div class="col-1"><li></li></div>
-                                <div class="title col-11">E-mail <span>: linkaraksesnusantara@gmail.com</span></div>
+                                <div class="col-1"><li><img src="assets/img/email.svg" alt=""></li></div>
+                                <div class="title col-11">E-mail <span>: <a href="https://mail.google.com/chat/u/0/?hl=in#chat/dm/vm1qpcAAAAE" id="mail">linkaraksesnusantara@gmail.com</a></span></div>
                             </div>                                                                        
                         </div>
                     </div>
@@ -244,62 +269,99 @@
     <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-2 mt-5">
-                    <img src="/assets/img/Logo.svg" alt="..." height="100px" width="100%">
-                </div>
-                <div class="col-md-3 mt-5">
+                <div class="logo col-md-2 mt-5">                    
+                    <img src="/assets/img/logo-footer.svg" alt="..." >                      
+                </div>                
+                <div class="col-md-3 mt-5 text-start mt-1 col text-center" id="footer-desktop">
                     <div class="menus">
                         <div class="row">
                             <div class="col-1"></div>
                             <div class="col-11"><p class="title">Perusahaan</p></div>
                             <div class="col-1"><li></li></div>
-                            <div class="col-11"><p class="">Tentang Kami</p></div>                                                                                    
+                            <div class="col-11"><p class="menu"><a href="#tentangKami">Tentang Kami</a></p></div>                                                                                    
                             <div class="col-1"><li></li></div>
-                            <div class="col-11"><p class="">Layanan</p></div>                                                                                    
+                            <div class="col-11"><p class="menu"><a href="#layanan">Layanan</a></p></div>                                                                                    
                             <div class="col-1"><li></li></div>
-                            <div class="col-11"><p class="">Produk</p></div>                                                                                    
+                            <div class="col-11"><p class="menu"><a href="#produk">Produk</a></p></div>                                                                                    
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 mt-5">
+                <div class="col-md-3 mt-5 text-start mt-1 col text-center" id="footer-desktop">
                     <div class="menus">
                         <div class="row">
                             <div class="col-1"></div>
                             <div class="col-11"><p class="title">Menu</p></div>
                             <div class="col-1"><li></li></div>
-                            <div class="col-11"><p class="">Team</p></div>
+                            <div class="col-11"><p class="menu"><a href="#team">Team</a></p></div>
                             <div class="col-1"><li></li></div>
-                            <div class="col-11"><p class="">Kontak</p></div>
+                            <div class="col-11"><p class="menu"><a href="#kontak">Kontak</a></p></div>
                         </div>
                     </div>
+                </div>                
+                <div class="sosial-media col-md-4 mt-5 mt-1" id="footer-desktop">
+                    <p class="title">Social Media</p>
+                    <div class="sosmed">     
+                        <a href="https://facebook.com" target="_blank">
+                            <img src="/assets/img/Facebook (2).svg" alt="Facebook">                        
+                        </a>  
+                        <a href="https://youtube.com" target="_blank">
+                            <img src="/assets/img/YouTube.svg" alt="YouTube">                        
+                        </a>                
+                        <a href="https://instagram.com" target="_blank">
+                            <img src="/assets/img/Instagram (1).svg" alt="Instagram">                        
+                        </a>                        
+                    </div>                    
                 </div>
-                <div class="col-md-1 mt-5">
-                    <p class="title"></p>
-                </div>
-                <div class="col-md-3 mt-5">
-                    <p class="title">Tentang Kami</p>
-                    <p class="sub-title">Kami menyediakan layanan telekomunikasi, multimedia, internet, dengan profesionalisme dan inovasi untuk memenuhi kebutuhan pelanggan.</p>
+                <div id="footer-mobile">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="menus">
+                                <p class="title text-center">Perusahaan</p>
+                                <p class="sub-title text-center"><a href="#tentangKami">Tentang Kami</a></p>
+                                <p class="sub-title text-center"><a href="#layanan">Layanan</a></p>
+                                <p class="sub-title text-center"><a href="#produk">Produk</a></p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="menus">
+                                <p class="title text-center">Perusahaan</p>
+                                <p class="sub-title text-center"><a href="#team">Team</a></p>                            
+                                <p class="sub-title text-center"><a href="#kontak">Kontak</a></p>                            
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center d-flex justify-content-center">
+                            <p class="title">Social Media</p>                                                        
+                        </div>
+                    </div>  
+                    <div class="row">
+                        <div class="sosmed col-12 d-flex justify-content-center">
+                            <a href="https://facebook.com"><img src="assets/img/Facebook (2).svg" alt=""></a>
+                            <a href="https://youtube.com"><img src="assets/img/YouTube.svg" alt=""></a>
+                            <a href="https://instagram.com"><img src="assets/img/Instagram (1).svg" alt=""></a>                            
+                        </div>
+                    </div>                  
                 </div>
             </div>
             <div class="container">
                 <hr>
-                <p class="text-center">PT. LINGKAR AKSES NUSANTARA</p>
+                <p class="copy text-center">PT. LINGKAR AKSES NUSANTARA &copy; <span id="currentYear"></span>. All rights reserved</p>
                 <br>
-            </div>
+            </div>            
         </div>
         <div id="scrollToTop" class="scroll-to-top">
             <i class="bi bi-caret-up-fill"></i>
         </div>
     </div>
-    <!-- Section Footer Selesai -->
+    <!-- Section Footer Selesai -->    
 
-
+    <script src="main.js"></script>  
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-
-    <script src="main.js"></script>    
 </body>
 </html>
