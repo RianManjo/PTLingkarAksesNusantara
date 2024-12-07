@@ -117,7 +117,7 @@
 .layanan .card {
     padding: 60px 30px;
     cursor: pointer; 
-    margin: 20px;   
+    margin: 5px;   
     background-color: #fff;
     transition: background-color 0.1s ease, transform 0.1s ease;
     border: none;
