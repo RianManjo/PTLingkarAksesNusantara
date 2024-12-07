@@ -553,13 +553,14 @@ textarea.form-control {
     }
 
     #footer-mobile .title {
-        font-size: 24px;
+        font-size: 20px;
         margin-top: 10px;
     }    
 
     #footer-mobile .sub-title a {
         text-decoration: none;
         color: #fff;
+        font-size: 12px;
     }
 
     #footer-mobile .sub-title a:hover {
