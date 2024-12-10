@@ -21,6 +21,7 @@
 
 .navbar .logo img {
     width: 100px;
+    margin-top: -10px;
 }
 
 .navbar ul {
@@ -100,10 +101,8 @@
 /* Section Dashboard Selesai */
 
 /* Section Layanan */
-
 .layanan {
-    background: #f9f9f9;  
-    height: 1300px;  
+    background: #f9f9f9;      
 }
 
 .layanan .title-header {
@@ -136,6 +135,7 @@
     font-size: 20px;
     font-weight: 600;
     /* color: #151948; */
+    margin-top: 15px;
     margin-bottom: 15px;
     font-family: 'Pathway Extreme', sans-serif;
 }
@@ -183,7 +183,7 @@
 /* Seciton Produk */
 .produk {
     background: #f9f9f9;
-    height: 800px;
+    height: 750px;
 }
 
 .produk .title {
@@ -218,7 +218,8 @@
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 11px;
-    width: 222px;
+    /* width: 222px;
+    position: relative; */
 }
 
 .produk .card .btn-common {
@@ -236,7 +237,6 @@
     font-weight: 500;
     letter-spacing: 1px;
     margin-top: 30px;
-
 }
 
 /* Section Produk Selesai */
@@ -246,7 +246,7 @@
     font-size: 35px;
     font-weight: 600;
     line-height: 30px;
-    color: #000;
+    color: #000;      
 }
 
 .kontak .header .sub-title {
@@ -425,11 +425,7 @@ textarea.form-control {
     }
     /* Navigation Bar Selesai */
 
-    /* Section Dashboard */
-    .dashboard {
-        height: 900px;
-    }
-
+    /* Section Dashboard */    
     .dashboard .title {                
         font-size: 20px;
         box-sizing: border-box;
@@ -494,11 +490,19 @@ textarea.form-control {
     .tentang .deskripsi li img {        
         width: 20px;        
     }
+
+    .tentang .sec-right {
+        display: none;
+    }
     /* Section Tentang Kami Selesai */
 
     /* Section Produck  */
     .produk {
-        height: 1500px;
+        height: 1400px;
+    }
+
+    .produk .card {
+        padding: 10px 15px 20px 15px;
     }
 
     .produk .title {
@@ -529,7 +533,7 @@ textarea.form-control {
 
     /* Section Kontak */
     .kontak .header .title {
-        font-size: 24px;
+        font-size: 24px;        
     }
 
     .kontak .header .sub-title {
