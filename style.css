@@ -50,11 +50,28 @@
 /* Navigation Bar Selesai */
 
 /* Section Dashboard */
-#home {
-    background-image: url('/assets/img/bg-dashboard.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;   
+
+.video-background {
+    /* position: fixed; */
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.video-background video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;    
+}
+
+.video-background::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
 }
 
 .dashboard .title {
@@ -129,7 +146,6 @@
     /* border: 1px solid #ccc; */
 }
 
-
 .flip-container:hover .flipper,  .flip-container.hover .flipper, .flip-container-1:hover .flipper-1, .flip-container.flip-container-1.hover .flipper-1, .flip-container-2:hover .flipper-2, .flip-container.flip-container-2.hover .flipper-2 {
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
@@ -140,7 +156,6 @@
 .flip-container, .front, .back, .flip-container-1, .front-1, .back-1, .flip-container-2, .front-2, .back-2, .flip-container{
 	width: 320px;	
 }
-
 
 .flipper, .flipper-1, .flipper-2 {
 	-webkit-transition: 0.6s;
@@ -153,8 +168,6 @@
 	transform-style: preserve-3d;
 	position: relative;
 }
-
-
 
 .front, .back, .front-1, .back-1, .front-2, .back-2 {
 	-webkit-backface-visibility: hidden;
@@ -250,8 +263,8 @@
     position: absolute;
     margin-top: 200px;
     margin-left: 20px;
+    font-size: 16px;
 }
-
 /* Section Layanan Selesai */
 
 /* Section Tentang Kami */
@@ -295,8 +308,8 @@
 
 /* Seciton Produk */
 .produk {
-    background: #f9f9f9;
-    height: 750px;
+    background: #ffffff;
+    /* height: 750px; */
 }
 
 .produk .title {
@@ -308,50 +321,180 @@
 }
 
 .produk .card {
-    padding: 55px;
-    margin: 20px 20px 20px 20px;
-    border: none;
+    background: #fff;    
+    margin-bottom: 50px;
     border-radius: 15px;
-    /* height: 500px; */
+    border: 2px solid #cacaca;
 }
 
-.produk .card:hover {    
-    transform: scale(1.04);
-    border: rgb(124, 124, 124) solid 1px;
+.produk .card .container hr {
+    border: 1.5px solid #000;
 }
 
-.produk .card img {
-    width: 137px;
-    height: 131px;
+
+@property --p {
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
 }
+  
+.pie {
+    --p: 20; /* Default percentage */
+    --b: 22px; /* Border thickness */
+    --c: darkred; /* Default color */
+    --w: 150px; /* Width of the pie chart */
+    @property --p {
+        syntax: '<number>';
+        inherits: true;
+        initial-value: 0;
+    }
+
+    .pie {
+        --p: 20; /* Default percentage */
+        --b: 22px; /* Border thickness */
+        --c: darkred; /* Default color */
+        --w: 150px; /* Width of the pie chart */
+      
+        width: var(--w);
+        aspect-ratio: 1;
+        position: relative;
+        display: inline-grid;
+        margin: 5px;
+        place-content: center;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: sans-serif;
+      }
+      
+      .pie:before,
+      .pie:after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+      }
+      
+      .pie:before {
+        inset: 0;
+        background:
+          radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b) var(--b) no-repeat,
+          conic-gradient(var(--c) calc(var(--p) * 1%), #0000 0);
+        -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+        mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+        transform: rotate(-180deg); /* Mulai dari bawah (jam 6) */
+      }
+      
+      .pie:after {
+        inset: calc(50% - var(--b) / 2);
+        background: var(--c);
+        transform: rotate(calc(var(--p) * 3.6deg - 180deg)) translateY(calc(50% - var(--w) / 2)); /* Mulai dari bawah (jam 6) */
+      }
+      
+      .animate {
+        animation: p 2s 0.5s both; /* Animasi selama 2 detik */
+      }
+      
+      @keyframes p {
+        from {
+          --p: 0;
+        }
+    }      
+      
+    width: var(--w);
+    aspect-ratio: 1;
+    position: relative;
+    display: inline-grid;
+    margin: 5px;
+    place-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.pie:before, .pie:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.pie:before {
+    inset: 0;
+    background:
+    radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b) var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p) * 1%), #0000 0);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+    mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+    transform: rotate(-180deg); /* Mulai dari bawah (jam 6) */
+}
+
+    .pie:after {
+    inset: calc(50% - var(--b) / 2);
+    background: var(--c);
+    transform: rotate(calc(var(--p) * 3.6deg - 180deg)) translateY(calc(50% - var(--w) / 2)); /* Mulai dari bawah (jam 6) */
+}
+
+    .animate {
+    animation: p 1s 0.5s both;
+}
+
+@keyframes p {
+    from {
+        --p: 0;
+    }
+}
+    
 
 .produk .card .title {
-    font-size: 20px;
-    color: #151948;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-bottom: 11px;
-    /* width: 222px;
-    position: relative; */
+    text-align: center;
+    margin-top: 20px;
 }
 
-.produk .card .btn-common {
-    background-color: #0e5fb1;
+.chart, .harga, .card a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produk .chart .speed .title {
+    font-size: 10px;
     position: relative;
-    z-index: 1;
-    box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
-    width: 160px;
-    height: 50px;
-    font-size: 14px;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin-top: 30px;
+    text-align: center;
 }
 
+.chart .speed .number {
+    position: relative;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.chart .speed .sub-title {
+    font-size: 15px;
+    position: relative;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.produk .detail .deskripsi .col-4 img {
+    width: 20px;
+}
+
+.harga p {
+    font-weight: bold;
+}
+
+.card a {
+    text-decoration: none;    
+}
+
+.card a button {
+    color: #fff;
+    background-color: #034AAD;
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    width: 200px;
+    height: 48px;
+    margin-bottom: 30px;
+}
 /* Section Produk Selesai */
 
 /* Section Kotak */
@@ -584,6 +727,16 @@ textarea.form-control {
     }
 
     .layanan .card .sub-title {
+        font-size: 12px;
+    }
+
+    .back p, .back-1 p, .back-2 p {
+        font-size: 15px;
+    }
+
+    .back button, .back-1 button, .back-2 button {        
+        width: 120px;
+        height: 38px;                
         font-size: 12px;
     }
     /* Section Layanan Selesai */
