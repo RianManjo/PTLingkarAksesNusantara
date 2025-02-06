@@ -514,71 +514,21 @@
 
 /* Section Produk Selesai */
 
-/* Section Kotak */
-.kontak .header .title {
-    font-size: 35px;
-    font-weight: 600;
-    line-height: 30px;
-    color: #000;      
+/* Section Kontak */
+.kontak {
+    background-color: #f9f9f9;
 }
 
-.kontak .header .sub-title {
-    font-size: 18px;
-    line-height: 26px;
-    color: #8f8f8f;
+.kontak .sosmed {
+    display: flex;
+    gap: 20px;
 }
 
-.kontak .card input {
-    min-height: 42px;
-    padding: 0px 0 0 28px;
-    font-size: 16px;
-    color: #5e629c;
+.kontak .sosmed .icon a img {
+    width: 32px;
+    height: 32px;    
 }
-
-textarea.form-control {
-    min-height: calc(4.9em + .75rem + calc(var(--bs-border-width)* 2));
-}
-
-.kontak .form .btn-common {
-    background-color: #0e5fb1;
-    position: relative;
-    z-index: 1;
-    box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
-    width: 160px;
-    height: 50px;
-    padding: 14px 15px;
-    border: none;
-    color: #fff;
-    font-size: 14px;
-    border-radius: 4px;
-    letter-spacing: 1px;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-.kontak .informasi .card {
-    padding: 20px;    
-}
-
-.informasi .card li {
-    list-style: none;
-}
-
-.kontak .informasi .card .title {
-    font-size: 15px;
-    color: #000;
-    line-height: 33px;
-    font-weight: bolder;
-    margin-top: -3px;
-    
-}
-
-.kontak .informasi .card .title span {
-    font-weight: 400;
-    color: #000;
-}
-
-/* Section Kotak End */
+/* Section Kontak End */
 
 /* Section Footer */
 .footer {
