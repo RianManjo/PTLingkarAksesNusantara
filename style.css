@@ -57,6 +57,23 @@ video {
     object-fit: cover;    
 }
 
+.dashboard {
+    position: absolute;
+    z-index: 99;
+    color: #fff;
+}
+
+.dashboard .title {
+    margin-top: 35vh;
+    font-size: 70px;
+    line-height: 68px;
+    font-weight: 700;
+}
+
+.dashboard .sub-title {
+    margin-top: 20px;
+    font-size: 25px;
+}
 /* Section Dashboard Selesai */
 
 /* Section Layanan */
