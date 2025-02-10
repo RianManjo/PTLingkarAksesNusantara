@@ -266,9 +266,9 @@ video {
 /* Section Tentang Kami Selesai */
 
 /* Seciton Produk */
-.produk {
-    background: #ffffff;
-    /* height: 750px; */
+#produk {
+    background-image: url('assets/img/Black\ And\ White\ Minimalist\ Typography\ Personal\ Logo.gif');
+    object-fit: cover;
 }
 
 .produk .title {
@@ -468,6 +468,18 @@ video {
     letter-spacing: 1px;
     border: none;
     border-radius: 10px;
+}
+
+#btn-product {
+    background-color: #034AAD;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 
