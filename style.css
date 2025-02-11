@@ -50,6 +50,14 @@
 /* Navigation Bar Selesai */
 
 /* Section Dashboard */
+#home {
+    background-image: url('assets/img/bg-dashboard.gif');
+    height: 100vh;
+    width: 100%;
+    /* object-fit: cover; */
+    background-size: cover;
+}
+
 video {
     width: 100%;
     height: 100vh;
