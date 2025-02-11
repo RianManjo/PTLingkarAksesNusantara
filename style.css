@@ -290,6 +290,29 @@ video {
     border: 1.5px solid #000;
 }
 
+.produk .card .kecepatan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produk .card .kecepatan img {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    margin-top: 35px;
+}
+
+.produk .card .kecepatan .info p {
+    margin-top: 50px;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.produk .card .kecepatan .info p span {
+    font-size: 20px;
+}
 
 @property --p {
     syntax: '<number>';
@@ -411,6 +434,7 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
 }
 
 .produk .chart .speed .title {
@@ -481,8 +505,6 @@ video {
     font-weight: 600;
     letter-spacing: 0.5px;
 }
-
-
 /* Section Produk Selesai */
 
 /* Section Kontak */
