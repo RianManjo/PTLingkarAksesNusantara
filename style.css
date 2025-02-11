@@ -515,6 +515,44 @@ video {
 }
 /* Section Produk Selesai */
 
+/* Section Area */
+#coverage {
+    background-image: url('assets/img/bg-coverage.svg');
+    background-size: cover;        
+}
+
+#coverage .area {
+    color: #fff;
+}
+
+#coverage .area .title {
+    padding-top: 150px;
+    font-size: 35px;
+    font-weight: 500;    
+}
+
+#coverage .area .sub-title {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+#coverage .area .deskripsi {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+#coverage .card {
+    height: 48px;
+    margin-top: 50px;
+    margin-bottom: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* Section Area Selesai */
+
 /* Section Kontak */
 .kontak {
     background-color: #f9f9f9;
