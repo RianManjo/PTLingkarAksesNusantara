@@ -53,16 +53,8 @@
 #home {
     background-image: url('assets/img/bg-dashboard.gif');
     height: 100vh;
-    width: 100%;
-    /* object-fit: cover; */
+    width: 100%;    
     background-size: cover;
-}
-
-video {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    object-fit: cover;    
 }
 
 .dashboard {
@@ -321,117 +313,6 @@ video {
 .produk .card .kecepatan .info p span {
     font-size: 20px;
 }
-
-@property --p {
-    syntax: '<number>';
-    inherits: true;
-    initial-value: 0;
-}
-  
-.pie {
-    --p: 20; /* Default percentage */
-    --b: 22px; /* Border thickness */
-    --c: darkred; /* Default color */
-    --w: 150px; /* Width of the pie chart */
-    @property --p {
-        syntax: '<number>';
-        inherits: true;
-        initial-value: 0;
-    }
-
-    .pie {
-        --p: 20; /* Default percentage */
-        --b: 22px; /* Border thickness */
-        --c: darkred; /* Default color */
-        --w: 150px; /* Width of the pie chart */
-      
-        width: var(--w);
-        aspect-ratio: 1;
-        position: relative;
-        display: inline-grid;
-        margin: 5px;
-        place-content: center;
-        font-size: 25px;
-        font-weight: bold;
-        font-family: sans-serif;
-      }
-      
-      .pie:before,
-      .pie:after {
-        content: "";
-        position: absolute;
-        border-radius: 50%;
-      }
-      
-      .pie:before {
-        inset: 0;
-        background:
-          radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b) var(--b) no-repeat,
-          conic-gradient(var(--c) calc(var(--p) * 1%), #0000 0);
-        -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
-        mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
-        transform: rotate(-180deg); /* Mulai dari bawah (jam 6) */
-      }
-      
-      .pie:after {
-        inset: calc(50% - var(--b) / 2);
-        background: var(--c);
-        transform: rotate(calc(var(--p) * 3.6deg - 180deg)) translateY(calc(50% - var(--w) / 2)); /* Mulai dari bawah (jam 6) */
-      }
-      
-      .animate {
-        animation: p 2s 0.5s both; /* Animasi selama 2 detik */
-      }
-      
-      @keyframes p {
-        from {
-          --p: 0;
-        }
-    }      
-      
-    width: var(--w);
-    aspect-ratio: 1;
-    position: relative;
-    display: inline-grid;
-    margin: 5px;
-    place-content: center;
-    font-size: 25px;
-    font-weight: bold;
-    font-family: sans-serif;
-}
-
-.pie:before, .pie:after {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-}
-
-.pie:before {
-    inset: 0;
-    background:
-    radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b) var(--b) no-repeat,
-    conic-gradient(var(--c) calc(var(--p) * 1%), #0000 0);
-    -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
-    mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
-    transform: rotate(-180deg); /* Mulai dari bawah (jam 6) */
-}
-
-    .pie:after {
-    inset: calc(50% - var(--b) / 2);
-    background: var(--c);
-    transform: rotate(calc(var(--p) * 3.6deg - 180deg)) translateY(calc(50% - var(--w) / 2)); /* Mulai dari bawah (jam 6) */
-}
-
-    .animate {
-    animation: p 1s 0.5s both;
-}
-
-@keyframes p {
-    from {
-        --p: 0;
-    }
-}
-    
 
 .produk .card .title {
     text-align: center;
@@ -707,33 +588,20 @@ video {
     /* Navigation Bar Selesai */
 
     /* Section Dashboard */    
-    .dashboard .title {                
+    #home {
+        height: 50vh;
+        object-fit: cover;
+    }  
+
+    #home .dashboard .title {
         font-size: 20px;
-        box-sizing: border-box;
-        font-weight: 700;
-        letter-spacing: 1px;
-        margin-top: 80px;   
+        margin-top: 150px;
+        line-height: 20px;
     }
 
-    .dashboard .sub-title {
+    #home .dashboard .sub-title {
         font-size: 12px;
-        font-weight: 400;
-    }    
-
-    .dashboard img {           
-        width: 350px;
-        height: 300px;        
-        margin: 50px 0px 0px 0px;  
     }
-
-    .dashboard .btn-common {            
-        margin-top: 20px;
-        width: 140px;
-        height: 30px;                
-        font-weight: 100;
-        font-size: 12px;           
-        letter-spacing: 0px;
-    }    
     /* Section Dashboard Selesai */
 
     /* Section Layanan */
@@ -764,42 +632,16 @@ video {
         font-size: 12px;
     }
     /* Section Layanan Selesai */
-
-    /* Section Tentang Kami */    
-    .tentang .title {
-        font-size: 24px;
-    }
-
-    .tentang .sub-title {
-        font-size: 16px;
-    }
-
-    .tentang .desc, .tentang .deskripsi .isi {
-        font-size: 12px;
-    }
-
-    .tentang .deskripsi li img {        
-        width: 20px;        
-    }
-
-    .tentang .sec-right {
-        display: none;
-    }
-    /* Section Tentang Kami Selesai */
-
-    /* Section Produck  */
-    .produk {
-        height: 1400px;
-    }
-
+    
+    /* Section Produck  */    
     .produk .card {
-        padding: 10px 15px 20px 15px;
+        /* padding: 10px 15px 20px 15px; */
     }
 
     .produk .title {
         font-size: 24px;
         width: auto;
-    }
+    }    
 
     .produk .card img {
         width: 90px ;
@@ -807,7 +649,7 @@ video {
 
     .produk .card .title {
         font-size: 18px; 
-        margin-top: -30px;      
+        /* margin-top: -30px;       */
     }
 
     .produk .card .sub-title {
@@ -822,19 +664,40 @@ video {
     }
     /* Section Produck Selesai  */
 
+    /* Section Area  */
+    #coverage .area .title {
+        padding-top: 80px;
+        font-size: 20px;
+    }
+
+    #coverage .area .sub-title {
+        font-size: 24px;
+    }
+
+    #coverage .area .deskripsi {
+        font-size: 12px;
+    }
+
+    #coverage .card {
+        font-size: 8px;
+        width: 90px;
+        height: 30px;
+        margin-bottom: 100px;
+        margin-top: 10px;
+    }
+    /* Section Area  Selesai */
+
     /* Section Kontak */
     .kontak .header .title {
         font-size: 24px;        
     }
 
-    .kontak .header .sub-title {
-        font-size: 16px;
+    .kontak .sub-title {
+        font-size: 12px;
     }
 
-    .kontak .form .btn-common {
-        width: 120px;        
-        font-family: 'Pathway Extreme', sans-serif;
-        font-weight: 200;
+    .kontak iframe {
+        /* width: 100%; */
     }
     /* Section Kontak Selesai */
 
