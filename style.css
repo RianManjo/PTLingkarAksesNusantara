@@ -680,7 +680,7 @@
 
     #coverage .card {
         font-size: 8px;
-        width: 90px;
+        /* width: 90px; */
         height: 30px;
         margin-bottom: 100px;
         margin-top: 10px;
