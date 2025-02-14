@@ -246,10 +246,8 @@
     font-size: 13px;    
 }
 
-.tentang .desc {
-    /* color: #5e629c; */
-    line-height: 26px;
-    /* font-size: 20px; */
+.tentang .desc {    
+    line-height: 26px;    
 }
 
 .tentang .deskripsi li {
@@ -442,13 +440,11 @@
 .kontak .title {
     font-size: 24px;
     font-weight: 600;
-    color: #000;
-    /* margin-top: 30px; */
+    color: #000;    
 }
 
 .kontak .sub-title {
-    font-size: 16px;
-    /* color: #a0a6ad; */
+    font-size: 16px;    
 }
 
 .kontak .sub-title a {
@@ -555,12 +551,6 @@
 }
 /* Section Footer Selesai */
 
-/* Responsive Tablet*/
-@media (max-width: 992px) {
-
-}
-/* Responsive Tablet Selesai*/
-
 /* Responsive Mobile */
 @media (max-width: 768px) {
     /* Navigation Bar */
@@ -634,10 +624,6 @@
     /* Section Layanan Selesai */
     
     /* Section Produck  */    
-    .produk .card {
-        /* padding: 10px 15px 20px 15px; */
-    }
-
     .produk .title {
         font-size: 24px;
         width: auto;
@@ -648,8 +634,7 @@
     }
 
     .produk .card .title {
-        font-size: 18px; 
-        /* margin-top: -30px;       */
+        font-size: 18px;         
     }
 
     .produk .card .sub-title {
@@ -679,8 +664,7 @@
     }
 
     #coverage .card {
-        font-size: 8px;
-        /* width: 90px; */
+        font-size: 8px;        
         height: 30px;
         margin-bottom: 100px;
         margin-top: 10px;
@@ -694,18 +678,12 @@
 
     .kontak .sub-title {
         font-size: 12px;
-    }
-
-    .kontak iframe {
-        /* width: 100%; */
-    }
-    /* Section Kontak Selesai */
+    }    
 
     .footer .logo {
         display: flex;
         justify-content: center 
     }
-    
 
     .footer .menus .menu {
         font-size: 12px;
@@ -738,7 +716,6 @@
     .copy {
         font-size: 12px;
     }
-
 }
 /* Responsive Mobile Selesai */
 
